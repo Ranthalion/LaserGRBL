@@ -54,12 +54,12 @@ namespace LaserGRBL
 		
 		public static void Save()
 		{
-			System.Runtime.Serialization.Formatters.Binary.BinaryFormatter f = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
-			using (System.IO.FileStream fs = new System.IO.FileStream("LaserGRBL.Settings.bin", System.IO.FileMode.Create, System.IO.FileAccess.Write, System.IO.FileShare.None))
-			{
-				f.Serialize(fs, dic);
-				fs.Close();
-			}
+			//System.Runtime.Serialization.Formatters.Binary.BinaryFormatter f = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
+			//using (System.IO.FileStream fs = new System.IO.FileStream("LaserGRBL.Settings.bin", System.IO.FileMode.Create, System.IO.FileAccess.Write, System.IO.FileShare.None))
+			//{
+			//	f.Serialize(fs, dic);
+			//	fs.Close();
+			//}
 		}
 
 		internal static void DeleteObject(string key)
