@@ -48,16 +48,16 @@ namespace LaserGRBL
 		private int mTarOvRapids;
 		private int mTarOvSpindle;
 		
-		private Tools.ThreadObject TX;
-		private Tools.ThreadObject RX;
+		//private Tools.ThreadObject TX;
+		//private Tools.ThreadObject RX;
 		
 		public GrblCore(System.Windows.Forms.Control syncroObject)
 		{
 			syncro = syncroObject;
 			com = new System.IO.Ports.SerialPort();
 			
-			TX = new Tools.ThreadObject(ThreadTX, 1, true, "Serial TX Thread", null);
-			RX = new Tools.ThreadObject(ThreadRX, 1, true, "Serial RX Thread", null);
+			//TX = new Tools.ThreadObject(ThreadTX, 1, true, "Serial TX Thread", null);
+			//RX = new Tools.ThreadObject(ThreadRX, 1, true, "Serial RX Thread", null);
 			
 			file = new GrblFile();
 			file.OnFileLoaded += RiseOnFileLoaded;
@@ -308,8 +308,8 @@ namespace LaserGRBL
 			lock(this)
 			{
 				GrblReset();
-				RX.Start();
-				TX.Start();
+				//RX.Start();
+				//TX.Start();
 			}
 		}
 		
@@ -324,8 +324,8 @@ namespace LaserGRBL
 			
 			mBuffer = 0;
 
-			TX.Stop();
-			RX.Stop();
+			//TX.Stop();
+			//RX.Stop();
 			
 			lock(this)
 			{ClearQueue(false);}
@@ -496,22 +496,22 @@ namespace LaserGRBL
 		private long lastPosRequest;
 		protected void ThreadTX()
 		{
-			lock(this)
-			{
-				try
-				{
-					if (!TX.MustExitTH() && CanSend())
-						SendLine();
+			//lock(this)
+			//{
+			//	try
+			//	{
+			//		if (!TX.MustExitTH() && CanSend())
+			//			SendLine();
 					
-					long now = Tools.HiResTimer.TotalMilliseconds;
-					if (now - lastPosRequest > 200)
-					{
-						QueryPosition();
-						lastPosRequest = now;
-					}
-				}
-				catch {}
-			}
+			//		long now = Tools.HiResTimer.TotalMilliseconds;
+			//		if (now - lastPosRequest > 200)
+			//		{
+			//			QueryPosition();
+			//			lastPosRequest = now;
+			//		}
+			//	}
+			//	catch {}
+			//}
 		}
 		
 		private bool CanSend()

@@ -38,8 +38,8 @@ namespace LaserGRBL
 
 		public static void CheckVersion()
 		{
-			if ((bool)Settings.GetObject("Auto Update", true))
-				System.Threading.ThreadPool.QueueUserWorkItem(new System.Threading.WaitCallback(GitHub.AsyncCheckVersion));
+			//if ((bool)Settings.GetObject("Auto Update", true))
+			//	System.Threading.ThreadPool.QueueUserWorkItem(new System.Threading.WaitCallback(GitHub.AsyncCheckVersion));
 		}
 
 		public static void AsyncCheckVersion(object foo)

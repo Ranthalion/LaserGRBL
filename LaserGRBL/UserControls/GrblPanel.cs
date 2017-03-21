@@ -24,19 +24,19 @@ namespace LaserGRBL.UserControls
 			mLastPosition = new PointF(0, 0);
 		}
 		
-		protected override void OnPaint(PaintEventArgs e)
-		{
-			base.OnPaint(e);
+		//protected override void OnPaint(PaintEventArgs e)
+		//{
+		//	base.OnPaint(e);
 		
-			if (mBitmap != null)
-				e.Graphics.DrawImage(mBitmap, 0, 0, Width, Height);
+		//	if (mBitmap != null)
+		//		e.Graphics.DrawImage(mBitmap, 0, 0, Width, Height);
 
 
-			PointF p = TranslatePoint(mLastPosition);
-			e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-			e.Graphics.DrawLine(Pens.Blue, (int)p.X, (int)p.Y - 3, (int)p.X, (int)p.Y - 3 + 7);
-			e.Graphics.DrawLine(Pens.Blue, (int)p.X - 3, (int)p.Y, (int)p.X - 3 + 7, (int)p.Y);
-		}
+		//	PointF p = TranslatePoint(mLastPosition);
+		//	e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+		//	e.Graphics.DrawLine(Pens.Blue, (int)p.X, (int)p.Y - 3, (int)p.X, (int)p.Y - 3 + 7);
+		//	e.Graphics.DrawLine(Pens.Blue, (int)p.X - 3, (int)p.Y, (int)p.X - 3 + 7, (int)p.Y);
+		//}
 		
 			
 
@@ -48,7 +48,7 @@ namespace LaserGRBL.UserControls
 
 		void OnFileLoaded(long elapsed, string filename)
 		{
-			RecreateBMP();
+			//RecreateBMP();
 		}
 		
 		public void RecreateBMP()
@@ -64,11 +64,11 @@ namespace LaserGRBL.UserControls
 			TH.Start();
 		}
 		
-		protected override void OnSizeChanged(EventArgs e)
-		{
-			base.OnSizeChanged(e);
-			RecreateBMP();
-		}
+		//protected override void OnSizeChanged(EventArgs e)
+		//{
+		//	base.OnSizeChanged(e);
+		//	RecreateBMP();
+		//}
 		
 		private void DoTheWork()
 		{
