@@ -236,8 +236,8 @@ namespace LaserGRBL.RasterConverter
 			IP.Formula = (ImageTransform.Formula)CbMode.SelectedItem;
 
 			SuspendLayout();
-			TBRed.Visible = TBGreen.Visible = TBBlue.Visible = (IP.Formula == ImageTransform.Formula.Custom && !IP.IsGrayScale);
-			LblRed.Visible = LblGreen.Visible = LblBlue.Visible = (IP.Formula == ImageTransform.Formula.Custom && !IP.IsGrayScale);
+			TBRed.Enabled = TBGreen.Enabled = TBBlue.Enabled = (IP.Formula == ImageTransform.Formula.Custom && !IP.IsGrayScale);
+			LblRed.Enabled = LblGreen.Enabled = LblBlue.Enabled = (IP.Formula == ImageTransform.Formula.Custom && !IP.IsGrayScale);
 			ResumeLayout();
 		}
 

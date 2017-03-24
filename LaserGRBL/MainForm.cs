@@ -41,7 +41,11 @@ namespace LaserGRBL
 		{
 			if (InvokeRequired)
 			{
-				Invoke(new GitHub.NewVersionDlg(GitHub_NewVersion), current, latest, name, url);
+				try
+				{
+					Invoke(new GitHub.NewVersionDlg(GitHub_NewVersion), current, latest, name, url);
+				}
+				catch { }
 			}
 			else
 			{
@@ -59,7 +63,11 @@ namespace LaserGRBL
 		{
 			if (InvokeRequired)
 			{
-				Invoke(new GrblFile.OnFileLoadedDlg(OnFileLoaded), elapsed, filename);
+				try
+				{
+					Invoke(new GrblFile.OnFileLoadedDlg(OnFileLoaded), elapsed, filename);
+				}
+				catch { }
 			}
 			else
 			{

@@ -14,7 +14,6 @@ namespace LaserGRBL.RasterConverter
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
 		private System.Windows.Forms.Label label9;
@@ -48,7 +47,6 @@ namespace LaserGRBL.RasterConverter
 		private LaserGRBL.UserControls.IntegerInput.IntegerInputRanged IIMaxPower;
 		private System.Windows.Forms.Label label18;
 		private System.Windows.Forms.TextBox TxtLaserOn;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 		private System.Windows.Forms.Button BtnCreate;
 		private System.Windows.Forms.Button BtnCancel;
 		
@@ -74,7 +72,6 @@ namespace LaserGRBL.RasterConverter
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConvertSizeAndOptionForm));
-			this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
 			this.label9 = new System.Windows.Forms.Label();
@@ -108,32 +105,20 @@ namespace LaserGRBL.RasterConverter
 			this.IIMaxPower = new LaserGRBL.UserControls.IntegerInput.IntegerInputRanged();
 			this.label18 = new System.Windows.Forms.Label();
 			this.TxtLaserOn = new System.Windows.Forms.TextBox();
-			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.BtnCancel = new System.Windows.Forms.Button();
 			this.BtnCreate = new System.Windows.Forms.Button();
-			this.tableLayoutPanel9.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.tableLayoutPanel3.SuspendLayout();
 			this.groupBox3.SuspendLayout();
 			this.tableLayoutPanel6.SuspendLayout();
 			this.groupBox5.SuspendLayout();
 			this.tableLayoutPanel7.SuspendLayout();
-			this.tableLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// tableLayoutPanel9
-			// 
-			resources.ApplyResources(this.tableLayoutPanel9, "tableLayoutPanel9");
-			this.tableLayoutPanel9.Controls.Add(this.groupBox2, 0, 2);
-			this.tableLayoutPanel9.Controls.Add(this.groupBox3, 0, 0);
-			this.tableLayoutPanel9.Controls.Add(this.groupBox5, 0, 1);
-			this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel1, 0, 3);
-			this.tableLayoutPanel9.Name = "tableLayoutPanel9";
 			// 
 			// groupBox2
 			// 
-			resources.ApplyResources(this.groupBox2, "groupBox2");
 			this.groupBox2.Controls.Add(this.tableLayoutPanel3);
+			resources.ApplyResources(this.groupBox2, "groupBox2");
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.TabStop = false;
 			// 
@@ -175,9 +160,9 @@ namespace LaserGRBL.RasterConverter
 			// 
 			// IIOffsetY
 			// 
-			resources.ApplyResources(this.IIOffsetY, "IIOffsetY");
 			this.IIOffsetY.ForcedText = null;
 			this.IIOffsetY.ForceMinMax = false;
+			resources.ApplyResources(this.IIOffsetY, "IIOffsetY");
 			this.IIOffsetY.MaxValue = 1000;
 			this.IIOffsetY.MinValue = 0;
 			this.IIOffsetY.Name = "IIOffsetY";
@@ -186,9 +171,9 @@ namespace LaserGRBL.RasterConverter
 			// 
 			// IISizeH
 			// 
-			resources.ApplyResources(this.IISizeH, "IISizeH");
 			this.IISizeH.ForcedText = null;
 			this.IISizeH.ForceMinMax = false;
+			resources.ApplyResources(this.IISizeH, "IISizeH");
 			this.IISizeH.MaxValue = 1000;
 			this.IISizeH.MinValue = 10;
 			this.IISizeH.Name = "IISizeH";
@@ -197,9 +182,9 @@ namespace LaserGRBL.RasterConverter
 			// 
 			// IISizeW
 			// 
-			resources.ApplyResources(this.IISizeW, "IISizeW");
 			this.IISizeW.ForcedText = null;
 			this.IISizeW.ForceMinMax = false;
+			resources.ApplyResources(this.IISizeW, "IISizeW");
 			this.IISizeW.MaxValue = 1000;
 			this.IISizeW.MinValue = 10;
 			this.IISizeW.Name = "IISizeW";
@@ -315,8 +300,8 @@ namespace LaserGRBL.RasterConverter
 			// 
 			// groupBox5
 			// 
-			resources.ApplyResources(this.groupBox5, "groupBox5");
 			this.groupBox5.Controls.Add(this.tableLayoutPanel7);
+			resources.ApplyResources(this.groupBox5, "groupBox5");
 			this.groupBox5.Name = "groupBox5";
 			this.groupBox5.TabStop = false;
 			// 
@@ -388,13 +373,6 @@ namespace LaserGRBL.RasterConverter
 			this.TxtLaserOn.Name = "TxtLaserOn";
 			this.TxtLaserOn.TextChanged += new System.EventHandler(this.TxtLaserOnTextChanged);
 			// 
-			// tableLayoutPanel1
-			// 
-			resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-			this.tableLayoutPanel1.Controls.Add(this.BtnCancel, 1, 0);
-			this.tableLayoutPanel1.Controls.Add(this.BtnCreate, 2, 0);
-			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-			// 
 			// BtnCancel
 			// 
 			resources.ApplyResources(this.BtnCancel, "BtnCancel");
@@ -413,26 +391,24 @@ namespace LaserGRBL.RasterConverter
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.tableLayoutPanel9);
+			this.Controls.Add(this.BtnCancel);
+			this.Controls.Add(this.groupBox2);
+			this.Controls.Add(this.BtnCreate);
+			this.Controls.Add(this.groupBox5);
+			this.Controls.Add(this.groupBox3);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "ConvertSizeAndOptionForm";
-			this.tableLayoutPanel9.ResumeLayout(false);
-			this.tableLayoutPanel9.PerformLayout();
 			this.groupBox2.ResumeLayout(false);
-			this.groupBox2.PerformLayout();
 			this.tableLayoutPanel3.ResumeLayout(false);
 			this.tableLayoutPanel3.PerformLayout();
 			this.groupBox3.ResumeLayout(false);
-			this.groupBox3.PerformLayout();
 			this.tableLayoutPanel6.ResumeLayout(false);
 			this.tableLayoutPanel6.PerformLayout();
 			this.groupBox5.ResumeLayout(false);
 			this.groupBox5.PerformLayout();
 			this.tableLayoutPanel7.ResumeLayout(false);
 			this.tableLayoutPanel7.PerformLayout();
-			this.tableLayoutPanel1.ResumeLayout(false);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 	}

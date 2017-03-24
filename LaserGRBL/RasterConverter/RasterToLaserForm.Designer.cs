@@ -30,21 +30,12 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RasterToLaserForm));
-			this.RightGrid = new System.Windows.Forms.TableLayoutPanel();
 			this.TCOriginalPreview = new System.Windows.Forms.TabControl();
 			this.TpPreview = new System.Windows.Forms.TabPage();
-			this.WB = new LaserGRBL.UserControls.WaitingProgressBar();
 			this.PbConverted = new System.Windows.Forms.PictureBox();
 			this.TpOriginal = new System.Windows.Forms.TabPage();
 			this.PbOriginal = new System.Windows.Forms.PictureBox();
 			this.FlipControl = new System.Windows.Forms.TableLayoutPanel();
-			this.BtFlipV = new LaserGRBL.UserControls.ImageButton();
-			this.BtFlipH = new LaserGRBL.UserControls.ImageButton();
-			this.BtRotateCW = new LaserGRBL.UserControls.ImageButton();
-			this.BtRotateCCW = new LaserGRBL.UserControls.ImageButton();
-			this.BtnCrop = new LaserGRBL.UserControls.ImageButton();
-			this.BtnRevert = new LaserGRBL.UserControls.ImageButton();
-			this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
 			this.GbVectorizeOptions = new System.Windows.Forms.GroupBox();
 			this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
 			this.label22 = new System.Windows.Forms.Label();
@@ -69,19 +60,13 @@
 			this.CbResize = new System.Windows.Forms.ComboBox();
 			this.LblGrayscale = new System.Windows.Forms.Label();
 			this.CbMode = new System.Windows.Forms.ComboBox();
-			this.TBRed = new LaserGRBL.UserControls.ColorSlider();
 			this.LblRed = new System.Windows.Forms.Label();
 			this.LblBlue = new System.Windows.Forms.Label();
 			this.LblGreen = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.TBGreen = new LaserGRBL.UserControls.ColorSlider();
-			this.TbBright = new LaserGRBL.UserControls.ColorSlider();
-			this.TBBlue = new LaserGRBL.UserControls.ColorSlider();
-			this.TbContrast = new LaserGRBL.UserControls.ColorSlider();
 			this.label3 = new System.Windows.Forms.Label();
 			this.CbThreshold = new System.Windows.Forms.CheckBox();
 			this.label28 = new System.Windows.Forms.Label();
-			this.TbThreshold = new LaserGRBL.UserControls.ColorSlider();
 			this.GbLineToLineOptions = new System.Windows.Forms.GroupBox();
 			this.TLP = new System.Windows.Forms.TableLayoutPanel();
 			this.CbDirections = new System.Windows.Forms.ComboBox();
@@ -95,19 +80,30 @@
 			this.RbDithering = new System.Windows.Forms.RadioButton();
 			this.RbVectorize = new System.Windows.Forms.RadioButton();
 			this.RbLineToLineTracing = new System.Windows.Forms.RadioButton();
-			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.BtnCancel = new System.Windows.Forms.Button();
 			this.BtnCreate = new System.Windows.Forms.Button();
 			this.WT = new System.Windows.Forms.Timer(this.components);
 			this.TT = new System.Windows.Forms.ToolTip(this.components);
-			this.RightGrid.SuspendLayout();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.TBRed = new LaserGRBL.UserControls.ColorSlider();
+			this.TBGreen = new LaserGRBL.UserControls.ColorSlider();
+			this.TbBright = new LaserGRBL.UserControls.ColorSlider();
+			this.TBBlue = new LaserGRBL.UserControls.ColorSlider();
+			this.TbContrast = new LaserGRBL.UserControls.ColorSlider();
+			this.TbThreshold = new LaserGRBL.UserControls.ColorSlider();
+			this.BtFlipV = new LaserGRBL.UserControls.ImageButton();
+			this.WB = new LaserGRBL.UserControls.WaitingProgressBar();
+			this.BtFlipH = new LaserGRBL.UserControls.ImageButton();
+			this.BtRotateCW = new LaserGRBL.UserControls.ImageButton();
+			this.BtRotateCCW = new LaserGRBL.UserControls.ImageButton();
+			this.BtnCrop = new LaserGRBL.UserControls.ImageButton();
+			this.BtnRevert = new LaserGRBL.UserControls.ImageButton();
 			this.TCOriginalPreview.SuspendLayout();
 			this.TpPreview.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.PbConverted)).BeginInit();
 			this.TpOriginal.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.PbOriginal)).BeginInit();
 			this.FlipControl.SuspendLayout();
-			this.tableLayoutPanel8.SuspendLayout();
 			this.GbVectorizeOptions.SuspendLayout();
 			this.tableLayoutPanel5.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.UDSpotRemoval)).BeginInit();
@@ -122,24 +118,14 @@
 			((System.ComponentModel.ISupportInitialize)(this.UDQuality)).BeginInit();
 			this.groupBox4.SuspendLayout();
 			this.tableLayoutPanel4.SuspendLayout();
-			this.tableLayoutPanel1.SuspendLayout();
+			this.panel1.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// RightGrid
-			// 
-			resources.ApplyResources(this.RightGrid, "RightGrid");
-			this.RightGrid.Controls.Add(this.TCOriginalPreview, 1, 0);
-			this.RightGrid.Controls.Add(this.FlipControl, 1, 1);
-			this.RightGrid.Controls.Add(this.tableLayoutPanel8, 0, 0);
-			this.RightGrid.Controls.Add(this.tableLayoutPanel1, 3, 1);
-			this.RightGrid.Name = "RightGrid";
 			// 
 			// TCOriginalPreview
 			// 
-			this.RightGrid.SetColumnSpan(this.TCOriginalPreview, 3);
+			resources.ApplyResources(this.TCOriginalPreview, "TCOriginalPreview");
 			this.TCOriginalPreview.Controls.Add(this.TpPreview);
 			this.TCOriginalPreview.Controls.Add(this.TpOriginal);
-			resources.ApplyResources(this.TCOriginalPreview, "TCOriginalPreview");
 			this.TCOriginalPreview.Name = "TCOriginalPreview";
 			this.TCOriginalPreview.SelectedIndex = 0;
 			// 
@@ -150,26 +136,6 @@
 			resources.ApplyResources(this.TpPreview, "TpPreview");
 			this.TpPreview.Name = "TpPreview";
 			this.TpPreview.UseVisualStyleBackColor = true;
-			// 
-			// WB
-			// 
-			resources.ApplyResources(this.WB, "WB");
-			this.WB.BarColor = System.Drawing.Color.SteelBlue;
-			this.WB.BorderColor = System.Drawing.Color.Black;
-			this.WB.BouncingMode = LaserGRBL.UserControls.WaitingProgressBar.BouncingModeEnum.PingPong;
-			this.WB.DrawProgressString = false;
-			this.WB.FillColor = System.Drawing.Color.White;
-			this.WB.FillStyle = LaserGRBL.UserControls.FillStyles.Solid;
-			this.WB.Interval = 25D;
-			this.WB.Maximum = 20D;
-			this.WB.Minimum = 0D;
-			this.WB.Name = "WB";
-			this.WB.ProgressStringDecimals = 0;
-			this.WB.Reverse = true;
-			this.WB.Running = false;
-			this.WB.Step = 1D;
-			this.WB.ThrowExceprion = false;
-			this.WB.Value = 0D;
 			// 
 			// PbConverted
 			// 
@@ -206,94 +172,6 @@
 			this.FlipControl.Controls.Add(this.BtnRevert, 0, 0);
 			this.FlipControl.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns;
 			this.FlipControl.Name = "FlipControl";
-			// 
-			// BtFlipV
-			// 
-			this.BtFlipV.AltImage = null;
-			this.BtFlipV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.BtFlipV.Coloration = System.Drawing.Color.Empty;
-			this.BtFlipV.Image = ((System.Drawing.Image)(resources.GetObject("BtFlipV.Image")));
-			resources.ApplyResources(this.BtFlipV, "BtFlipV");
-			this.BtFlipV.Name = "BtFlipV";
-			this.BtFlipV.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
-			this.TT.SetToolTip(this.BtFlipV, resources.GetString("BtFlipV.ToolTip"));
-			this.BtFlipV.UseAltImage = false;
-			this.BtFlipV.Click += new System.EventHandler(this.BtFlipVClick);
-			// 
-			// BtFlipH
-			// 
-			this.BtFlipH.AltImage = null;
-			this.BtFlipH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.BtFlipH.Coloration = System.Drawing.Color.Empty;
-			this.BtFlipH.Image = ((System.Drawing.Image)(resources.GetObject("BtFlipH.Image")));
-			resources.ApplyResources(this.BtFlipH, "BtFlipH");
-			this.BtFlipH.Name = "BtFlipH";
-			this.BtFlipH.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
-			this.TT.SetToolTip(this.BtFlipH, resources.GetString("BtFlipH.ToolTip"));
-			this.BtFlipH.UseAltImage = false;
-			this.BtFlipH.Click += new System.EventHandler(this.BtFlipHClick);
-			// 
-			// BtRotateCW
-			// 
-			this.BtRotateCW.AltImage = null;
-			this.BtRotateCW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.BtRotateCW.Coloration = System.Drawing.Color.Empty;
-			this.BtRotateCW.Image = ((System.Drawing.Image)(resources.GetObject("BtRotateCW.Image")));
-			resources.ApplyResources(this.BtRotateCW, "BtRotateCW");
-			this.BtRotateCW.Name = "BtRotateCW";
-			this.BtRotateCW.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
-			this.TT.SetToolTip(this.BtRotateCW, resources.GetString("BtRotateCW.ToolTip"));
-			this.BtRotateCW.UseAltImage = false;
-			this.BtRotateCW.Click += new System.EventHandler(this.BtRotateCWClick);
-			// 
-			// BtRotateCCW
-			// 
-			this.BtRotateCCW.AltImage = null;
-			this.BtRotateCCW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.BtRotateCCW.Coloration = System.Drawing.Color.Empty;
-			this.BtRotateCCW.Image = ((System.Drawing.Image)(resources.GetObject("BtRotateCCW.Image")));
-			resources.ApplyResources(this.BtRotateCCW, "BtRotateCCW");
-			this.BtRotateCCW.Name = "BtRotateCCW";
-			this.BtRotateCCW.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
-			this.TT.SetToolTip(this.BtRotateCCW, resources.GetString("BtRotateCCW.ToolTip"));
-			this.BtRotateCCW.UseAltImage = false;
-			this.BtRotateCCW.Click += new System.EventHandler(this.BtRotateCCWClick);
-			// 
-			// BtnCrop
-			// 
-			this.BtnCrop.AltImage = null;
-			this.BtnCrop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.BtnCrop.Coloration = System.Drawing.Color.Empty;
-			this.BtnCrop.Image = ((System.Drawing.Image)(resources.GetObject("BtnCrop.Image")));
-			resources.ApplyResources(this.BtnCrop, "BtnCrop");
-			this.BtnCrop.Name = "BtnCrop";
-			this.BtnCrop.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
-			this.TT.SetToolTip(this.BtnCrop, resources.GetString("BtnCrop.ToolTip"));
-			this.BtnCrop.UseAltImage = false;
-			this.BtnCrop.Click += new System.EventHandler(this.BtnCropClick);
-			// 
-			// BtnRevert
-			// 
-			this.BtnRevert.AltImage = null;
-			this.BtnRevert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.BtnRevert.Coloration = System.Drawing.Color.Empty;
-			this.BtnRevert.Image = ((System.Drawing.Image)(resources.GetObject("BtnRevert.Image")));
-			resources.ApplyResources(this.BtnRevert, "BtnRevert");
-			this.BtnRevert.Name = "BtnRevert";
-			this.BtnRevert.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
-			this.TT.SetToolTip(this.BtnRevert, resources.GetString("BtnRevert.ToolTip"));
-			this.BtnRevert.UseAltImage = false;
-			this.BtnRevert.Click += new System.EventHandler(this.BtnRevertClick);
-			// 
-			// tableLayoutPanel8
-			// 
-			resources.ApplyResources(this.tableLayoutPanel8, "tableLayoutPanel8");
-			this.tableLayoutPanel8.Controls.Add(this.GbVectorizeOptions, 0, 3);
-			this.tableLayoutPanel8.Controls.Add(this.groupBox1, 0, 0);
-			this.tableLayoutPanel8.Controls.Add(this.GbLineToLineOptions, 0, 2);
-			this.tableLayoutPanel8.Controls.Add(this.groupBox4, 0, 1);
-			this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-			this.RightGrid.SetRowSpan(this.tableLayoutPanel8, 2);
 			// 
 			// GbVectorizeOptions
 			// 
@@ -561,26 +439,6 @@
 			this.TT.SetToolTip(this.CbMode, resources.GetString("CbMode.ToolTip"));
 			this.CbMode.SelectedIndexChanged += new System.EventHandler(this.CbMode_SelectedIndexChanged);
 			// 
-			// TBRed
-			// 
-			resources.ApplyResources(this.TBRed, "TBRed");
-			this.TBRed.BackColor = System.Drawing.Color.Transparent;
-			this.TBRed.BarInnerColor = System.Drawing.Color.Firebrick;
-			this.TBRed.BarOuterColor = System.Drawing.Color.DarkRed;
-			this.TBRed.BorderRoundRectSize = new System.Drawing.Size(8, 8);
-			this.TBRed.ElapsedInnerColor = System.Drawing.Color.Red;
-			this.TBRed.ElapsedOuterColor = System.Drawing.Color.DarkRed;
-			this.TBRed.LargeChange = ((uint)(5u));
-			this.TBRed.Maximum = 160;
-			this.TBRed.Minimum = 40;
-			this.TBRed.Name = "TBRed";
-			this.TBRed.SmallChange = ((uint)(1u));
-			this.TBRed.ThumbRoundRectSize = new System.Drawing.Size(6, 6);
-			this.TBRed.ThumbSize = 10;
-			this.TBRed.Value = 100;
-			this.TBRed.ValueChanged += new System.EventHandler(this.TBRed_ValueChanged);
-			this.TBRed.DoubleClick += new System.EventHandler(this.OnRGBCBDoubleClick);
-			// 
 			// LblRed
 			// 
 			resources.ApplyResources(this.LblRed, "LblRed");
@@ -601,84 +459,6 @@
 			resources.ApplyResources(this.label2, "label2");
 			this.label2.Name = "label2";
 			// 
-			// TBGreen
-			// 
-			resources.ApplyResources(this.TBGreen, "TBGreen");
-			this.TBGreen.BackColor = System.Drawing.Color.Transparent;
-			this.TBGreen.BarInnerColor = System.Drawing.Color.Green;
-			this.TBGreen.BarOuterColor = System.Drawing.Color.DarkGreen;
-			this.TBGreen.BorderRoundRectSize = new System.Drawing.Size(8, 8);
-			this.TBGreen.LargeChange = ((uint)(5u));
-			this.TBGreen.Maximum = 160;
-			this.TBGreen.Minimum = 40;
-			this.TBGreen.Name = "TBGreen";
-			this.TBGreen.SmallChange = ((uint)(1u));
-			this.TBGreen.ThumbRoundRectSize = new System.Drawing.Size(6, 6);
-			this.TBGreen.ThumbSize = 10;
-			this.TBGreen.Value = 100;
-			this.TBGreen.ValueChanged += new System.EventHandler(this.TBGreen_ValueChanged);
-			this.TBGreen.DoubleClick += new System.EventHandler(this.OnRGBCBDoubleClick);
-			// 
-			// TbBright
-			// 
-			resources.ApplyResources(this.TbBright, "TbBright");
-			this.TbBright.BackColor = System.Drawing.Color.Transparent;
-			this.TbBright.BarInnerColor = System.Drawing.Color.DimGray;
-			this.TbBright.BarOuterColor = System.Drawing.Color.Black;
-			this.TbBright.BorderRoundRectSize = new System.Drawing.Size(8, 8);
-			this.TbBright.ElapsedInnerColor = System.Drawing.Color.White;
-			this.TbBright.ElapsedOuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.TbBright.LargeChange = ((uint)(5u));
-			this.TbBright.Maximum = 160;
-			this.TbBright.Minimum = 40;
-			this.TbBright.Name = "TbBright";
-			this.TbBright.SmallChange = ((uint)(1u));
-			this.TbBright.ThumbRoundRectSize = new System.Drawing.Size(6, 6);
-			this.TbBright.ThumbSize = 10;
-			this.TbBright.Value = 100;
-			this.TbBright.ValueChanged += new System.EventHandler(this.TbBright_ValueChanged);
-			this.TbBright.DoubleClick += new System.EventHandler(this.OnRGBCBDoubleClick);
-			// 
-			// TBBlue
-			// 
-			resources.ApplyResources(this.TBBlue, "TBBlue");
-			this.TBBlue.BackColor = System.Drawing.Color.Transparent;
-			this.TBBlue.BarInnerColor = System.Drawing.Color.MediumBlue;
-			this.TBBlue.BarOuterColor = System.Drawing.Color.DarkBlue;
-			this.TBBlue.BorderRoundRectSize = new System.Drawing.Size(8, 8);
-			this.TBBlue.ElapsedInnerColor = System.Drawing.Color.DodgerBlue;
-			this.TBBlue.ElapsedOuterColor = System.Drawing.Color.SteelBlue;
-			this.TBBlue.LargeChange = ((uint)(5u));
-			this.TBBlue.Maximum = 160;
-			this.TBBlue.Minimum = 40;
-			this.TBBlue.Name = "TBBlue";
-			this.TBBlue.SmallChange = ((uint)(1u));
-			this.TBBlue.ThumbRoundRectSize = new System.Drawing.Size(6, 6);
-			this.TBBlue.ThumbSize = 10;
-			this.TBBlue.Value = 100;
-			this.TBBlue.ValueChanged += new System.EventHandler(this.TBBlue_ValueChanged);
-			this.TBBlue.DoubleClick += new System.EventHandler(this.OnRGBCBDoubleClick);
-			// 
-			// TbContrast
-			// 
-			resources.ApplyResources(this.TbContrast, "TbContrast");
-			this.TbContrast.BackColor = System.Drawing.Color.Transparent;
-			this.TbContrast.BarInnerColor = System.Drawing.Color.DimGray;
-			this.TbContrast.BarOuterColor = System.Drawing.Color.Black;
-			this.TbContrast.BorderRoundRectSize = new System.Drawing.Size(8, 8);
-			this.TbContrast.ElapsedInnerColor = System.Drawing.Color.White;
-			this.TbContrast.ElapsedOuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.TbContrast.LargeChange = ((uint)(5u));
-			this.TbContrast.Maximum = 160;
-			this.TbContrast.Minimum = 40;
-			this.TbContrast.Name = "TbContrast";
-			this.TbContrast.SmallChange = ((uint)(1u));
-			this.TbContrast.ThumbRoundRectSize = new System.Drawing.Size(6, 6);
-			this.TbContrast.ThumbSize = 10;
-			this.TbContrast.Value = 100;
-			this.TbContrast.ValueChanged += new System.EventHandler(this.TbContrast_ValueChanged);
-			this.TbContrast.DoubleClick += new System.EventHandler(this.OnRGBCBDoubleClick);
-			// 
 			// label3
 			// 
 			resources.ApplyResources(this.label3, "label3");
@@ -696,23 +476,6 @@
 			// 
 			resources.ApplyResources(this.label28, "label28");
 			this.label28.Name = "label28";
-			// 
-			// TbThreshold
-			// 
-			resources.ApplyResources(this.TbThreshold, "TbThreshold");
-			this.TbThreshold.BackColor = System.Drawing.Color.Transparent;
-			this.TbThreshold.BarInnerColor = System.Drawing.Color.DimGray;
-			this.TbThreshold.BarOuterColor = System.Drawing.Color.Black;
-			this.TbThreshold.BorderRoundRectSize = new System.Drawing.Size(8, 8);
-			this.TbThreshold.ElapsedInnerColor = System.Drawing.Color.White;
-			this.TbThreshold.ElapsedOuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.TbThreshold.LargeChange = ((uint)(5u));
-			this.TbThreshold.Name = "TbThreshold";
-			this.TbThreshold.SmallChange = ((uint)(1u));
-			this.TbThreshold.ThumbRoundRectSize = new System.Drawing.Size(6, 6);
-			this.TbThreshold.ThumbSize = 10;
-			this.TbThreshold.ValueChanged += new System.EventHandler(this.TbThreshold_ValueChanged);
-			this.TbThreshold.DoubleClick += new System.EventHandler(this.OnThresholdDoubleClick);
 			// 
 			// GbLineToLineOptions
 			// 
@@ -834,13 +597,6 @@
 			this.RbLineToLineTracing.UseVisualStyleBackColor = true;
 			this.RbLineToLineTracing.CheckedChanged += new System.EventHandler(this.RbLineToLineTracing_CheckedChanged);
 			// 
-			// tableLayoutPanel1
-			// 
-			resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-			this.tableLayoutPanel1.Controls.Add(this.BtnCancel, 0, 0);
-			this.tableLayoutPanel1.Controls.Add(this.BtnCreate, 1, 0);
-			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-			// 
 			// BtnCancel
 			// 
 			resources.ApplyResources(this.BtnCancel, "BtnCancel");
@@ -860,11 +616,237 @@
 			this.WT.Interval = 50;
 			this.WT.Tick += new System.EventHandler(this.WTTick);
 			// 
+			// panel1
+			// 
+			this.panel1.Controls.Add(this.GbVectorizeOptions);
+			this.panel1.Controls.Add(this.GbLineToLineOptions);
+			this.panel1.Controls.Add(this.groupBox4);
+			this.panel1.Controls.Add(this.groupBox1);
+			resources.ApplyResources(this.panel1, "panel1");
+			this.panel1.Name = "panel1";
+			// 
+			// TBRed
+			// 
+			resources.ApplyResources(this.TBRed, "TBRed");
+			this.TBRed.BackColor = System.Drawing.Color.Transparent;
+			this.TBRed.BarInnerColor = System.Drawing.Color.Firebrick;
+			this.TBRed.BarOuterColor = System.Drawing.Color.DarkRed;
+			this.TBRed.BorderRoundRectSize = new System.Drawing.Size(8, 8);
+			this.TBRed.ElapsedInnerColor = System.Drawing.Color.Red;
+			this.TBRed.ElapsedOuterColor = System.Drawing.Color.DarkRed;
+			this.TBRed.LargeChange = ((uint)(5u));
+			this.TBRed.Maximum = 160;
+			this.TBRed.Minimum = 40;
+			this.TBRed.Name = "TBRed";
+			this.TBRed.SmallChange = ((uint)(1u));
+			this.TBRed.ThumbRoundRectSize = new System.Drawing.Size(6, 6);
+			this.TBRed.ThumbSize = 10;
+			this.TBRed.Value = 100;
+			this.TBRed.ValueChanged += new System.EventHandler(this.TBRed_ValueChanged);
+			this.TBRed.DoubleClick += new System.EventHandler(this.OnRGBCBDoubleClick);
+			// 
+			// TBGreen
+			// 
+			resources.ApplyResources(this.TBGreen, "TBGreen");
+			this.TBGreen.BackColor = System.Drawing.Color.Transparent;
+			this.TBGreen.BarInnerColor = System.Drawing.Color.Green;
+			this.TBGreen.BarOuterColor = System.Drawing.Color.DarkGreen;
+			this.TBGreen.BorderRoundRectSize = new System.Drawing.Size(8, 8);
+			this.TBGreen.LargeChange = ((uint)(5u));
+			this.TBGreen.Maximum = 160;
+			this.TBGreen.Minimum = 40;
+			this.TBGreen.Name = "TBGreen";
+			this.TBGreen.SmallChange = ((uint)(1u));
+			this.TBGreen.ThumbRoundRectSize = new System.Drawing.Size(6, 6);
+			this.TBGreen.ThumbSize = 10;
+			this.TBGreen.Value = 100;
+			this.TBGreen.ValueChanged += new System.EventHandler(this.TBGreen_ValueChanged);
+			this.TBGreen.DoubleClick += new System.EventHandler(this.OnRGBCBDoubleClick);
+			// 
+			// TbBright
+			// 
+			resources.ApplyResources(this.TbBright, "TbBright");
+			this.TbBright.BackColor = System.Drawing.Color.Transparent;
+			this.TbBright.BarInnerColor = System.Drawing.Color.DimGray;
+			this.TbBright.BarOuterColor = System.Drawing.Color.Black;
+			this.TbBright.BorderRoundRectSize = new System.Drawing.Size(8, 8);
+			this.TbBright.ElapsedInnerColor = System.Drawing.Color.White;
+			this.TbBright.ElapsedOuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.TbBright.LargeChange = ((uint)(5u));
+			this.TbBright.Maximum = 160;
+			this.TbBright.Minimum = 40;
+			this.TbBright.Name = "TbBright";
+			this.TbBright.SmallChange = ((uint)(1u));
+			this.TbBright.ThumbRoundRectSize = new System.Drawing.Size(6, 6);
+			this.TbBright.ThumbSize = 10;
+			this.TbBright.Value = 100;
+			this.TbBright.ValueChanged += new System.EventHandler(this.TbBright_ValueChanged);
+			this.TbBright.DoubleClick += new System.EventHandler(this.OnRGBCBDoubleClick);
+			// 
+			// TBBlue
+			// 
+			resources.ApplyResources(this.TBBlue, "TBBlue");
+			this.TBBlue.BackColor = System.Drawing.Color.Transparent;
+			this.TBBlue.BarInnerColor = System.Drawing.Color.MediumBlue;
+			this.TBBlue.BarOuterColor = System.Drawing.Color.DarkBlue;
+			this.TBBlue.BorderRoundRectSize = new System.Drawing.Size(8, 8);
+			this.TBBlue.ElapsedInnerColor = System.Drawing.Color.DodgerBlue;
+			this.TBBlue.ElapsedOuterColor = System.Drawing.Color.SteelBlue;
+			this.TBBlue.LargeChange = ((uint)(5u));
+			this.TBBlue.Maximum = 160;
+			this.TBBlue.Minimum = 40;
+			this.TBBlue.Name = "TBBlue";
+			this.TBBlue.SmallChange = ((uint)(1u));
+			this.TBBlue.ThumbRoundRectSize = new System.Drawing.Size(6, 6);
+			this.TBBlue.ThumbSize = 10;
+			this.TBBlue.Value = 100;
+			this.TBBlue.ValueChanged += new System.EventHandler(this.TBBlue_ValueChanged);
+			this.TBBlue.DoubleClick += new System.EventHandler(this.OnRGBCBDoubleClick);
+			// 
+			// TbContrast
+			// 
+			resources.ApplyResources(this.TbContrast, "TbContrast");
+			this.TbContrast.BackColor = System.Drawing.Color.Transparent;
+			this.TbContrast.BarInnerColor = System.Drawing.Color.DimGray;
+			this.TbContrast.BarOuterColor = System.Drawing.Color.Black;
+			this.TbContrast.BorderRoundRectSize = new System.Drawing.Size(8, 8);
+			this.TbContrast.ElapsedInnerColor = System.Drawing.Color.White;
+			this.TbContrast.ElapsedOuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.TbContrast.LargeChange = ((uint)(5u));
+			this.TbContrast.Maximum = 160;
+			this.TbContrast.Minimum = 40;
+			this.TbContrast.Name = "TbContrast";
+			this.TbContrast.SmallChange = ((uint)(1u));
+			this.TbContrast.ThumbRoundRectSize = new System.Drawing.Size(6, 6);
+			this.TbContrast.ThumbSize = 10;
+			this.TbContrast.Value = 100;
+			this.TbContrast.ValueChanged += new System.EventHandler(this.TbContrast_ValueChanged);
+			this.TbContrast.DoubleClick += new System.EventHandler(this.OnRGBCBDoubleClick);
+			// 
+			// TbThreshold
+			// 
+			resources.ApplyResources(this.TbThreshold, "TbThreshold");
+			this.TbThreshold.BackColor = System.Drawing.Color.Transparent;
+			this.TbThreshold.BarInnerColor = System.Drawing.Color.DimGray;
+			this.TbThreshold.BarOuterColor = System.Drawing.Color.Black;
+			this.TbThreshold.BorderRoundRectSize = new System.Drawing.Size(8, 8);
+			this.TbThreshold.ElapsedInnerColor = System.Drawing.Color.White;
+			this.TbThreshold.ElapsedOuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.TbThreshold.LargeChange = ((uint)(5u));
+			this.TbThreshold.Name = "TbThreshold";
+			this.TbThreshold.SmallChange = ((uint)(1u));
+			this.TbThreshold.ThumbRoundRectSize = new System.Drawing.Size(6, 6);
+			this.TbThreshold.ThumbSize = 10;
+			this.TbThreshold.ValueChanged += new System.EventHandler(this.TbThreshold_ValueChanged);
+			this.TbThreshold.DoubleClick += new System.EventHandler(this.OnThresholdDoubleClick);
+			// 
+			// BtFlipV
+			// 
+			this.BtFlipV.AltImage = null;
+			this.BtFlipV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.BtFlipV.Coloration = System.Drawing.Color.Empty;
+			this.BtFlipV.Image = ((System.Drawing.Image)(resources.GetObject("BtFlipV.Image")));
+			resources.ApplyResources(this.BtFlipV, "BtFlipV");
+			this.BtFlipV.Name = "BtFlipV";
+			this.BtFlipV.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
+			this.TT.SetToolTip(this.BtFlipV, resources.GetString("BtFlipV.ToolTip"));
+			this.BtFlipV.UseAltImage = false;
+			this.BtFlipV.Click += new System.EventHandler(this.BtFlipVClick);
+			// 
+			// WB
+			// 
+			resources.ApplyResources(this.WB, "WB");
+			this.WB.BarColor = System.Drawing.Color.SteelBlue;
+			this.WB.BorderColor = System.Drawing.Color.Black;
+			this.WB.BouncingMode = LaserGRBL.UserControls.WaitingProgressBar.BouncingModeEnum.PingPong;
+			this.WB.DrawProgressString = false;
+			this.WB.FillColor = System.Drawing.Color.White;
+			this.WB.FillStyle = LaserGRBL.UserControls.FillStyles.Solid;
+			this.WB.Interval = 25D;
+			this.WB.Maximum = 20D;
+			this.WB.Minimum = 0D;
+			this.WB.Name = "WB";
+			this.WB.ProgressStringDecimals = 0;
+			this.WB.Reverse = true;
+			this.WB.Running = false;
+			this.WB.Step = 1D;
+			this.WB.ThrowExceprion = false;
+			this.WB.Value = 0D;
+			// 
+			// BtFlipH
+			// 
+			this.BtFlipH.AltImage = null;
+			this.BtFlipH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.BtFlipH.Coloration = System.Drawing.Color.Empty;
+			this.BtFlipH.Image = ((System.Drawing.Image)(resources.GetObject("BtFlipH.Image")));
+			resources.ApplyResources(this.BtFlipH, "BtFlipH");
+			this.BtFlipH.Name = "BtFlipH";
+			this.BtFlipH.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
+			this.TT.SetToolTip(this.BtFlipH, resources.GetString("BtFlipH.ToolTip"));
+			this.BtFlipH.UseAltImage = false;
+			this.BtFlipH.Click += new System.EventHandler(this.BtFlipHClick);
+			// 
+			// BtRotateCW
+			// 
+			this.BtRotateCW.AltImage = null;
+			this.BtRotateCW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.BtRotateCW.Coloration = System.Drawing.Color.Empty;
+			this.BtRotateCW.Image = ((System.Drawing.Image)(resources.GetObject("BtRotateCW.Image")));
+			resources.ApplyResources(this.BtRotateCW, "BtRotateCW");
+			this.BtRotateCW.Name = "BtRotateCW";
+			this.BtRotateCW.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
+			this.TT.SetToolTip(this.BtRotateCW, resources.GetString("BtRotateCW.ToolTip"));
+			this.BtRotateCW.UseAltImage = false;
+			this.BtRotateCW.Click += new System.EventHandler(this.BtRotateCWClick);
+			// 
+			// BtRotateCCW
+			// 
+			this.BtRotateCCW.AltImage = null;
+			this.BtRotateCCW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.BtRotateCCW.Coloration = System.Drawing.Color.Empty;
+			this.BtRotateCCW.Image = ((System.Drawing.Image)(resources.GetObject("BtRotateCCW.Image")));
+			resources.ApplyResources(this.BtRotateCCW, "BtRotateCCW");
+			this.BtRotateCCW.Name = "BtRotateCCW";
+			this.BtRotateCCW.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
+			this.TT.SetToolTip(this.BtRotateCCW, resources.GetString("BtRotateCCW.ToolTip"));
+			this.BtRotateCCW.UseAltImage = false;
+			this.BtRotateCCW.Click += new System.EventHandler(this.BtRotateCCWClick);
+			// 
+			// BtnCrop
+			// 
+			this.BtnCrop.AltImage = null;
+			this.BtnCrop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.BtnCrop.Coloration = System.Drawing.Color.Empty;
+			this.BtnCrop.Image = ((System.Drawing.Image)(resources.GetObject("BtnCrop.Image")));
+			resources.ApplyResources(this.BtnCrop, "BtnCrop");
+			this.BtnCrop.Name = "BtnCrop";
+			this.BtnCrop.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
+			this.TT.SetToolTip(this.BtnCrop, resources.GetString("BtnCrop.ToolTip"));
+			this.BtnCrop.UseAltImage = false;
+			this.BtnCrop.Click += new System.EventHandler(this.BtnCropClick);
+			// 
+			// BtnRevert
+			// 
+			this.BtnRevert.AltImage = null;
+			this.BtnRevert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.BtnRevert.Coloration = System.Drawing.Color.Empty;
+			this.BtnRevert.Image = ((System.Drawing.Image)(resources.GetObject("BtnRevert.Image")));
+			resources.ApplyResources(this.BtnRevert, "BtnRevert");
+			this.BtnRevert.Name = "BtnRevert";
+			this.BtnRevert.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
+			this.TT.SetToolTip(this.BtnRevert, resources.GetString("BtnRevert.ToolTip"));
+			this.BtnRevert.UseAltImage = false;
+			this.BtnRevert.Click += new System.EventHandler(this.BtnRevertClick);
+			// 
 			// RasterToLaserForm
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.RightGrid);
+			this.Controls.Add(this.panel1);
+			this.Controls.Add(this.FlipControl);
+			this.Controls.Add(this.BtnCancel);
+			this.Controls.Add(this.TCOriginalPreview);
+			this.Controls.Add(this.BtnCreate);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
@@ -872,18 +854,13 @@
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RasterToLaserFormFormClosing);
 			this.Load += new System.EventHandler(this.RasterToLaserForm_Load);
-			this.RightGrid.ResumeLayout(false);
-			this.RightGrid.PerformLayout();
 			this.TCOriginalPreview.ResumeLayout(false);
 			this.TpPreview.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.PbConverted)).EndInit();
 			this.TpOriginal.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.PbOriginal)).EndInit();
 			this.FlipControl.ResumeLayout(false);
-			this.tableLayoutPanel8.ResumeLayout(false);
-			this.tableLayoutPanel8.PerformLayout();
 			this.GbVectorizeOptions.ResumeLayout(false);
-			this.GbVectorizeOptions.PerformLayout();
 			this.tableLayoutPanel5.ResumeLayout(false);
 			this.tableLayoutPanel5.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.UDSpotRemoval)).EndInit();
@@ -892,26 +869,24 @@
 			((System.ComponentModel.ISupportInitialize)(this.UDFillingQuality)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.UDDownSample)).EndInit();
 			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.tableLayoutPanel2.PerformLayout();
 			this.GbLineToLineOptions.ResumeLayout(false);
-			this.GbLineToLineOptions.PerformLayout();
 			this.TLP.ResumeLayout(false);
 			this.TLP.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.UDQuality)).EndInit();
 			this.groupBox4.ResumeLayout(false);
-			this.groupBox4.PerformLayout();
 			this.tableLayoutPanel4.ResumeLayout(false);
 			this.tableLayoutPanel4.PerformLayout();
-			this.tableLayoutPanel1.ResumeLayout(false);
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
 		#endregion
 
-		private System.Windows.Forms.TableLayoutPanel RightGrid;
 		private System.Windows.Forms.TabControl TCOriginalPreview;
 		private System.Windows.Forms.TabPage TpPreview;
 		private System.Windows.Forms.PictureBox PbConverted;
@@ -954,7 +929,6 @@
 		private System.Windows.Forms.CheckBox CbSpotRemoval;
 		private System.Windows.Forms.CheckBox CbSmoothing;
 		private System.Windows.Forms.CheckBox CbOptimize;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
 		private System.Windows.Forms.Label label27;
 		private System.Windows.Forms.ComboBox CbDirections;
 		private System.Windows.Forms.Label label8;
@@ -975,11 +949,11 @@
 		private LaserGRBL.UserControls.ImageButton BtnCrop;
 		private LaserGRBL.UserControls.ImageButton BtnRevert;
 		private System.Windows.Forms.ToolTip TT;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 		private System.Windows.Forms.Button BtnCancel;
 		private System.Windows.Forms.RadioButton RbDithering;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.NumericUpDown UDDownSample;
 		private System.Windows.Forms.CheckBox CbDownSample;
+		private System.Windows.Forms.Panel panel1;
 	}
 }
