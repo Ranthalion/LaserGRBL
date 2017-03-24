@@ -118,35 +118,56 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TCOriginalPreview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 3</value>
+  </data>
+  <data name="TCOriginalPreview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 416</value>
+  </data>
+  <data name="FlipControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 425</value>
+  </data>
+  <data name="FlipControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 30</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanel8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanel8.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="tableLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 455</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>521, 425</value>
+  </data>
+  <data name="RightGrid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 461</value>
+  </data>
+  <data name="TpPreview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 390</value>
+  </data>
   <data name="WB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>609, 636</value>
+    <value>342, 368</value>
   </data>
   <data name="WB.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 16</value>
   </data>
   <data name="PbConverted.Size" type="System.Drawing.Size, System.Drawing">
-    <value>669, 652</value>
+    <value>402, 384</value>
   </data>
-  <data name="TpPreview.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TpOriginal.Size" type="System.Drawing.Size, System.Drawing">
     <value>675, 658</value>
   </data>
   <data name="PbOriginal.Size" type="System.Drawing.Size, System.Drawing">
     <value>669, 652</value>
   </data>
-  <data name="TpOriginal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>675, 658</value>
-  </data>
-  <data name="TCOriginalPreview.Location" type="System.Drawing.Point, System.Drawing">
-    <value>265, 3</value>
-  </data>
-  <data name="TCOriginalPreview.Size" type="System.Drawing.Size, System.Drawing">
-    <value>683, 684</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BtFlipV.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BtFlipV.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
@@ -416,17 +437,14 @@
   <data name="BtnRevert.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
   </data>
-  <data name="FlipControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>265, 693</value>
+  <data name="GbVectorizeOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 164</value>
   </data>
-  <data name="FlipControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 30</value>
+  <data name="GbVectorizeOptions.Text" xml:space="preserve">
+    <value>Opciones Vectorizar!</value>
   </data>
-  <data name="tableLayoutPanel8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tableLayoutPanel8.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
+  <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 145</value>
   </data>
   <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 13</value>
@@ -500,14 +518,14 @@
   <data name="CbDownSample.Location" type="System.Drawing.Point, System.Drawing">
     <value>173, 77</value>
   </data>
-  <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 145</value>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 231</value>
   </data>
-  <data name="GbVectorizeOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 164</value>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Parametros</value>
   </data>
-  <data name="GbVectorizeOptions.Text" xml:space="preserve">
-    <value>Opciones Vectorizar!</value>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 212</value>
   </data>
   <data name="CbResize.Location" type="System.Drawing.Point, System.Drawing">
     <value>92, 2</value>
@@ -605,14 +623,14 @@
   <data name="TbThreshold.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 25</value>
   </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 212</value>
+  <data name="GbLineToLineOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 89</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 231</value>
+  <data name="GbLineToLineOptions.Text" xml:space="preserve">
+    <value>Opciones Linea a Linea</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Parametros</value>
+  <data name="TLP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 70</value>
   </data>
   <data name="CbDirections.Location" type="System.Drawing.Point, System.Drawing">
     <value>60, 2</value>
@@ -650,14 +668,14 @@
   <data name="label8.Text" xml:space="preserve">
     <value>Lineas/mm</value>
   </data>
-  <data name="TLP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 70</value>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 82</value>
   </data>
-  <data name="GbLineToLineOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 89</value>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Herramienta de conversión</value>
   </data>
-  <data name="GbLineToLineOptions.Text" xml:space="preserve">
-    <value>Opciones Linea a Linea</value>
+  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 63</value>
   </data>
   <data name="RbVectorize.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 17</value>
@@ -671,32 +689,14 @@
   <data name="RbLineToLineTracing.Text" xml:space="preserve">
     <value>Linea a Linea</value>
   </data>
-  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 63</value>
-  </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 82</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>Herramienta de conversión</value>
-  </data>
-  <data name="tableLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>256, 723</value>
-  </data>
   <data name="BtnCancel.Text" xml:space="preserve">
     <value>Cancelar</value>
   </data>
   <data name="BtnCreate.Text" xml:space="preserve">
     <value>Próximo</value>
   </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>788, 693</value>
-  </data>
-  <data name="RightGrid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>951, 729</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>951, 729</value>
+    <value>684, 461</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Importar Imagen Rasterizada</value>

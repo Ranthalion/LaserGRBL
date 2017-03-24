@@ -30,9 +30,9 @@ namespace LaserGRBL
 
 			ComPort_OnOverrideChange();
 
-			//PreviewForm.SetCore(Core);
-			//ConnectionForm.SetCore(Core);
-			//JogForm.SetCore(Core);
+			PreviewForm.SetCore(Core);
+			ConnectionForm.SetCore(Core);
+			JogForm.SetCore(Core);
 
 			GitHub.NewVersion += GitHub_NewVersion;
 		}
@@ -83,11 +83,11 @@ namespace LaserGRBL
 
 		private void UpdateTimer_Tick(object sender, EventArgs e)
 		{
-			//TimerUpdate();
-			//ConnectionForm.TimerUpdate();
-			//PreviewForm.TimerUpdate();
-			
-			//JogForm.Enabled = Core.JogEnabled;
+			TimerUpdate();
+			ConnectionForm.TimerUpdate();
+			PreviewForm.TimerUpdate();
+
+			JogForm.Enabled = Core.JogEnabled;
 		}
 		
 		private void TimerUpdate()
