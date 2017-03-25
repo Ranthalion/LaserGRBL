@@ -82,10 +82,14 @@ namespace LaserGRBL
 		{
 			if (MachineStatusChanged != null)
 			{
-				if (syncro.InvokeRequired)
-					syncro.BeginInvoke(new dlgOnMachineStatus(RiseMachineStatusChanged));
-				else
-					MachineStatusChanged();
+				try
+				{
+					if (syncro.InvokeRequired)
+						syncro.BeginInvoke(new dlgOnMachineStatus(RiseMachineStatusChanged));
+					else
+						MachineStatusChanged();
+				}
+				catch { }
 			}
 		}			
 		
@@ -93,10 +97,14 @@ namespace LaserGRBL
 		{
 			if (OnOverrideChange != null)
 			{
-				if (syncro.InvokeRequired)
-					syncro.BeginInvoke(new dlgOnOverrideChange(RiseOverrideChanged));
-				else
-					OnOverrideChange();
+				try
+				{
+					if (syncro.InvokeRequired)
+						syncro.BeginInvoke(new dlgOnOverrideChange(RiseOverrideChanged));
+					else
+						OnOverrideChange();
+				}
+				catch { }
 			}
 		}
 		

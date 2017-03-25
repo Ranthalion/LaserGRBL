@@ -53,10 +53,13 @@ namespace LaserGRBL.RasterConverter
 		void OnPreviewBegin()
 		{
 			preventClose = true;
-				
 			if (InvokeRequired)
 			{
-				Invoke(new ImageProcessor.PreviewBeginDlg(OnPreviewBegin));
+				try
+				{
+					Invoke(new ImageProcessor.PreviewBeginDlg(OnPreviewBegin));
+				}
+				catch { }
 			}
 			else
 			{
@@ -68,7 +71,11 @@ namespace LaserGRBL.RasterConverter
 		{
 			if (InvokeRequired)
 			{
-				Invoke(new ImageProcessor.PreviewReadyDlg(OnPreviewReady), img);
+				try
+				{
+					Invoke(new ImageProcessor.PreviewReadyDlg(OnPreviewReady), img);
+				}
+				catch { }
 			}
 			else
 			{
